@@ -1,0 +1,105 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tekst {
+  text-align: center;
+  font-family: "Lobster", sans-serif;
+}
+
+.billeder {
+  display: grid;
+  grid-template-columns: 1fr; /* Én kolonne */
+  gap: 10px;
+  padding: 1em;
+  border: 50px solid white;
+  background-color: #ff8a0531;
+}
+
+.billeder img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px #053157;
+}
+
+.h1 {
+  text-align: center;
+}
+
+@media (width>=800px) {
+  .billeder {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 4em;
+    background-color: #ff8a0531;
+    gap: 3em;
+  }
+
+  .tekst {
+    margin-top: 0.5em;
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+  }
+
+  .billeder img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #4a1c00;
+    gap: 2em;
+  }
+
+  .billeder img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    color: #572100;
+    font-family: "Lobster", sans-serif;
+  }
+
+  .epunda-slab {
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 2em;
+    font-style: normal;
+  }
+
+  .lobster-regular {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .tal {
+    grid-column: 5/6;
+    grid-row: 4/5;
+  }
+
+  .romkugle {
+    grid-column: 6/7;
+    grid-row: 4/5;
+  }
+
+  .skilt {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+
+  .billede1 {
+    text-align: center;
+  }
+}
